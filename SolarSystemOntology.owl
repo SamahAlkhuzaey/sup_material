@@ -70,6 +70,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Density">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The mass per unit volume of an object. The unit of density used in this ontology is kilograms per cubic meter (kg/m³).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -78,6 +79,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Discovered">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The year in which a celestial object was discovered</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -86,6 +88,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Discoverer">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The individual or team responsible for the discovery of a celestial object.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -94,6 +97,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#hasMass">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The mass of a celestial object in kilograms (kg).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -102,6 +106,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#hasOrbitalPeriod">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The orbital period of a celestial object, defined as the time it takes to complete one full orbit around its primary (e.g., a star, planet, or other gravitational center). This property is expressed in Earth days.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -110,6 +115,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#hasOrbitalRadius">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>The average orbital radius of a celestial object, expressed in kilometers (km). Values represent the semi-major axis of the object&apos;s elliptical orbit.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -118,6 +124,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#hasRings">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The number of rings a celestial object has.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -272,6 +279,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Borrelly">
         <rdf:type rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Comets"/>
+        <solar_system_ontology:Density rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</solar_system_ontology:Density>
         <solar_system_ontology:Discovered rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1904</solar_system_ontology:Discovered>
         <solar_system_ontology:Discoverer>Alphonse Borrelly</solar_system_ontology:Discoverer>
     </owl:NamedIndividual>
@@ -340,9 +348,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Terrestrial_Planet"/>
         <solar_system_ontology:hasAtmosphere rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#EarthAtmosphere"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Moon"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59700000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">597000000000000000000000000000</solar_system_ontology:hasMass>
         <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">365</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6371.0</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149600000</solar_system_ontology:hasOrbitalRadius>
     </owl:NamedIndividual>
     
 
@@ -472,7 +480,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Asteroids"/>
         <solar_system_ontology:Discovered rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1910</solar_system_ontology:Discovered>
         <solar_system_ontology:Discoverer>Vincenzo Cerulli</solar_system_ontology:Discoverer>
-        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1955</solar_system_ontology:hasOrbitalPeriod>
+        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1967</solar_system_ontology:hasOrbitalPeriod>
     </owl:NamedIndividual>
     
 
@@ -503,9 +511,9 @@
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Harpalyke"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Himalia"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Isonoe"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1900000000000</solar_system_ontology:hasMass>
-        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4380</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69911</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19000000000000000000000000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4333</solar_system_ontology:hasOrbitalPeriod>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">778340000</solar_system_ontology:hasOrbitalRadius>
         <solar_system_ontology:hasRings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</solar_system_ontology:hasRings>
     </owl:NamedIndividual>
     
@@ -544,9 +552,9 @@
         <solar_system_ontology:hasAtmosphere rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#MarsAtmosphere"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Deimos"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Phobos"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">642000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6420000000000000000000000000</solar_system_ontology:hasMass>
         <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">687</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3389.5</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">227940000</solar_system_ontology:hasOrbitalRadius>
     </owl:NamedIndividual>
     
 
@@ -567,9 +575,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Mercury">
         <rdf:type rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Terrestrial_Planet"/>
         <solar_system_ontology:hasAtmosphere rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#MercuryAtmosphere"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33000000000000000000000000000</solar_system_ontology:hasMass>
         <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2439.7</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">57910000</solar_system_ontology:hasOrbitalRadius>
     </owl:NamedIndividual>
     
 
@@ -623,9 +631,9 @@
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Psamathe"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Sao"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Triton"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1020000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1020000000000000000000000000000</solar_system_ontology:hasMass>
         <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60190</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24622</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4498250000</solar_system_ontology:hasOrbitalRadius>
         <solar_system_ontology:hasRings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</solar_system_ontology:hasRings>
     </owl:NamedIndividual>
     
@@ -752,9 +760,9 @@
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Rhea"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Tethys"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Titan"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">568000000000000</solar_system_ontology:hasMass>
-        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10756</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58232</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5680000000000000000000000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10759</solar_system_ontology:hasOrbitalPeriod>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1426730000</solar_system_ontology:hasOrbitalRadius>
         <solar_system_ontology:hasRings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</solar_system_ontology:hasRings>
     </owl:NamedIndividual>
     
@@ -819,9 +827,9 @@
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Miranda"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Oberon"/>
         <solar_system_ontology:hasSatellite rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Titania"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8680000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">868000000000000000000000000000</solar_system_ontology:hasMass>
         <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30688</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25362</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2870990000</solar_system_ontology:hasOrbitalRadius>
         <solar_system_ontology:hasRings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</solar_system_ontology:hasRings>
     </owl:NamedIndividual>
     
@@ -842,9 +850,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Venus">
         <rdf:type rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Terrestrial_Planet"/>
         <solar_system_ontology:hasAtmosphere rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#VenusAtmosphere"/>
-        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">487000000000</solar_system_ontology:hasMass>
+        <solar_system_ontology:hasMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">487000000000000000000000000000</solar_system_ontology:hasMass>
         <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">225</solar_system_ontology:hasOrbitalPeriod>
-        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6051.8</solar_system_ontology:hasOrbitalRadius>
+        <solar_system_ontology:hasOrbitalRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108200000</solar_system_ontology:hasOrbitalRadius>
     </owl:NamedIndividual>
     
 
@@ -876,7 +884,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/samahalkhuzaey/ontologies/2022/5/solar_system_ontology#Asteroids"/>
         <solar_system_ontology:Discovered rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1858</solar_system_ontology:Discovered>
         <solar_system_ontology:Discoverer>Hermann Goldschmidt</solar_system_ontology:Discoverer>
-        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1988</solar_system_ontology:hasOrbitalPeriod>
+        <solar_system_ontology:hasOrbitalPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2623</solar_system_ontology:hasOrbitalPeriod>
     </owl:NamedIndividual>
     
 
@@ -938,5 +946,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
